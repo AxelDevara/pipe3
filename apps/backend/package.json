@@ -1,0 +1,15 @@
+{
+  "name": "pipe3-treatment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bun index.ts"
+  },
+  "author": "AxelDev",
+  "license": "ISC",
+  "dependencies": {
+    "ethereum-events": "^0.1.3"
+  }
+}
