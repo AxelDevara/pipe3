@@ -1,6 +1,5 @@
 import {Contract} from './contract';
-const Web3 = require('web3');
-const EthereumEvents = require('ethereum-events');
+
 const WEB3_PROVIDER = process.env.ALCHEMY_ETH_API_URL;
 
 export class Pipe {
@@ -17,8 +16,7 @@ export class Pipe {
   
   constructor(contracts: Array<Contract>) {
     this.contracts = contracts;
-    const web3 = new Web3(WEB3_PROVIDER);
-    this.listener = new EthereumEvents(web3, this.contracts, this.options)
+   
   }
 }
 

@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bun index.ts"
+    "start": "ts-node index.ts"
   },
   "author": "AxelDev",
   "license": "ISC",
   "dependencies": {
-    "ethereum-events": "^0.1.3"
+    "@types/express": "^4.17.13",
+    "ethers": "^5.6.9",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }
